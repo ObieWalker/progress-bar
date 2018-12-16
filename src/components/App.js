@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import ProgressBar from './container/ProgressBar'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <p>test</p>
+        <ProgressBar />
       </div>
     );
   }
