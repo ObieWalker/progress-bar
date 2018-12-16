@@ -30,7 +30,6 @@
 
 .completed-step, .start-step {
   font-size: 60px;
-  /* margin-top: 10px; */
   display: flex;
   width: 0.4em;
   box-sizing: content-box;
@@ -41,14 +40,27 @@
   z-index: 1
 }
 
-.step-btn {
-  background-color: seagreen;
+.button-container {
+  display: flex;
+  margin: 60px auto 0 auto;
+}
+
+.step-btn, .reset-btn {
   width: 100px;
   align-content: center;
-  margin: 60px auto 0 auto ;
   color: white;
   padding: 10px 10px;
   border-radius: 15px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.step-btn {
+  background-color: seagreen;
+}
+
+.reset-btn {
+  background-color: rgb(95, 9, 20);
 }
 
 @keyframes App-logo-spin {
