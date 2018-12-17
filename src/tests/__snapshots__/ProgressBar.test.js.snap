@@ -1,0 +1,1025 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar Component renders component successfully 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProgressBar />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <ForwardRef>
+          <span>
+            Select the number of steps:
+          </span>
+          <ForwardRef
+            onChange={[Function]}
+          >
+            <option
+              value="2"
+            >
+              2
+            </option>
+            <option
+              value="3"
+            >
+              3
+            </option>
+            <option
+              value="4"
+            >
+              4
+            </option>
+            <option
+              value="5"
+            >
+              5
+            </option>
+          </ForwardRef>
+        </ForwardRef>,
+        <ForwardRef>
+          <StartComponent />
+          <CompletedStep
+            currentStep={0}
+            index={0}
+            stepNumber={1}
+          />
+          <CompletedStep
+            currentStep={0}
+            index={1}
+            stepNumber={2}
+          />
+        </ForwardRef>,
+        <ForwardRef>
+          <ForwardRef
+            next={true}
+            onClick={[Function]}
+          >
+            Next Step ⇒
+          </ForwardRef>
+          <ForwardRef
+            onClick={[Function]}
+            reset={true}
+          >
+            Reset ↻
+          </ForwardRef>
+        </ForwardRef>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <span>
+              Select the number of steps:
+            </span>,
+            <ForwardRef
+              onChange={[Function]}
+            >
+              <option
+                value="2"
+              >
+                2
+              </option>
+              <option
+                value="3"
+              >
+                3
+              </option>
+              <option
+                value="4"
+              >
+                4
+              </option>
+              <option
+                value="5"
+              >
+                5
+              </option>
+            </ForwardRef>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Select the number of steps:",
+            },
+            "ref": null,
+            "rendered": "Select the number of steps:",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <option
+                  value="2"
+                >
+                  2
+                </option>,
+                <option
+                  value="3"
+                >
+                  3
+                </option>,
+                <option
+                  value="4"
+                >
+                  4
+                </option>,
+                <option
+                  value="5"
+                >
+                  5
+                </option>,
+              ],
+              "onChange": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "2",
+                  "value": "2",
+                },
+                "ref": null,
+                "rendered": "2",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "3",
+                  "value": "3",
+                },
+                "ref": null,
+                "rendered": "3",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "4",
+                  "value": "4",
+                },
+                "ref": null,
+                "rendered": "4",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "5",
+                  "value": "5",
+                },
+                "ref": null,
+                "rendered": "5",
+                "type": "option",
+              },
+            ],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-iwsKbI",
+                "isStatic": true,
+                "rules": Array [
+                  "
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  background-color: rgb(231, 231, 231);
+  background-position: center right;
+  background-repeat: no-repeat;
+  border: 1px solid #AAA;
+  border-radius: 2px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  color: #555;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  padding: 2px 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+",
+                ],
+              },
+              "displayName": "styled.select",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-iwsKbI",
+              "target": "select",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": true,
+            "rules": Array [
+              "
+  margin: 30px;
+  font-family: 'Courier New', Courier, monospace;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <StartComponent />,
+            Array [
+              <CompletedStep
+                currentStep={0}
+                index={0}
+                stepNumber={1}
+              />,
+              <CompletedStep
+                currentStep={0}
+                index={1}
+                stepNumber={2}
+              />,
+            ],
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "function",
+            "props": Object {
+              "currentStep": 0,
+              "index": 0,
+              "stepNumber": 1,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "function",
+            "props": Object {
+              "currentStep": 0,
+              "index": 1,
+              "stepNumber": 2,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bxivhb",
+            "isStatic": true,
+            "rules": Array [
+              "
+  display: flex;
+  align-self: center;
+  max-width: 100%;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bxivhb",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <ForwardRef
+              next={true}
+              onClick={[Function]}
+            >
+              Next Step ⇒
+            </ForwardRef>,
+            <ForwardRef
+              onClick={[Function]}
+              reset={true}
+            >
+              Reset ↻
+            </ForwardRef>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Next Step ⇒",
+              "next": true,
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Next Step ⇒",
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-gzVnrw",
+                "isStatic": false,
+                "rules": Array [
+                  "
+  width: 100px;
+  font-size: 12px;
+  align-content: center;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 20px;
+  ",
+                  [Function],
+                  ";
+",
+                ],
+              },
+              "displayName": "styled.button",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-gzVnrw",
+              "target": "button",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Reset ↻",
+              "onClick": [Function],
+              "reset": true,
+            },
+            "ref": null,
+            "rendered": "Reset ↻",
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-gzVnrw",
+                "isStatic": false,
+                "rules": Array [
+                  "
+  width: 100px;
+  font-size: 12px;
+  align-content: center;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 20px;
+  ",
+                  [Function],
+                  ";
+",
+                ],
+              },
+              "displayName": "styled.button",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-gzVnrw",
+              "target": "button",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-dnqmqq",
+            "isStatic": true,
+            "rules": Array [
+              "
+  display: flex;
+  margin: 60px auto 0 auto;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-dnqmqq",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bwzfXH",
+        "isStatic": true,
+        "rules": Array [
+          "
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  justify-content: space-between;
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bwzfXH",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <ForwardRef>
+            <span>
+              Select the number of steps:
+            </span>
+            <ForwardRef
+              onChange={[Function]}
+            >
+              <option
+                value="2"
+              >
+                2
+              </option>
+              <option
+                value="3"
+              >
+                3
+              </option>
+              <option
+                value="4"
+              >
+                4
+              </option>
+              <option
+                value="5"
+              >
+                5
+              </option>
+            </ForwardRef>
+          </ForwardRef>,
+          <ForwardRef>
+            <StartComponent />
+            <CompletedStep
+              currentStep={0}
+              index={0}
+              stepNumber={1}
+            />
+            <CompletedStep
+              currentStep={0}
+              index={1}
+              stepNumber={2}
+            />
+          </ForwardRef>,
+          <ForwardRef>
+            <ForwardRef
+              next={true}
+              onClick={[Function]}
+            >
+              Next Step ⇒
+            </ForwardRef>
+            <ForwardRef
+              onClick={[Function]}
+              reset={true}
+            >
+              Reset ↻
+            </ForwardRef>
+          </ForwardRef>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <span>
+                Select the number of steps:
+              </span>,
+              <ForwardRef
+                onChange={[Function]}
+              >
+                <option
+                  value="2"
+                >
+                  2
+                </option>
+                <option
+                  value="3"
+                >
+                  3
+                </option>
+                <option
+                  value="4"
+                >
+                  4
+                </option>
+                <option
+                  value="5"
+                >
+                  5
+                </option>
+              </ForwardRef>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Select the number of steps:",
+              },
+              "ref": null,
+              "rendered": "Select the number of steps:",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <option
+                    value="2"
+                  >
+                    2
+                  </option>,
+                  <option
+                    value="3"
+                  >
+                    3
+                  </option>,
+                  <option
+                    value="4"
+                  >
+                    4
+                  </option>,
+                  <option
+                    value="5"
+                  >
+                    5
+                  </option>,
+                ],
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "2",
+                    "value": "2",
+                  },
+                  "ref": null,
+                  "rendered": "2",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "3",
+                    "value": "3",
+                  },
+                  "ref": null,
+                  "rendered": "3",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "4",
+                    "value": "4",
+                  },
+                  "ref": null,
+                  "rendered": "4",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "5",
+                    "value": "5",
+                  },
+                  "ref": null,
+                  "rendered": "5",
+                  "type": "option",
+                },
+              ],
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-iwsKbI",
+                  "isStatic": true,
+                  "rules": Array [
+                    "
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  background-color: rgb(231, 231, 231);
+  background-position: center right;
+  background-repeat: no-repeat;
+  border: 1px solid #AAA;
+  border-radius: 2px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  color: #555;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  padding: 2px 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+",
+                  ],
+                },
+                "displayName": "styled.select",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-iwsKbI",
+                "target": "select",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-htpNat",
+              "isStatic": true,
+              "rules": Array [
+                "
+  margin: 30px;
+  font-family: 'Courier New', Courier, monospace;
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-htpNat",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <StartComponent />,
+              Array [
+                <CompletedStep
+                  currentStep={0}
+                  index={0}
+                  stepNumber={1}
+                />,
+                <CompletedStep
+                  currentStep={0}
+                  index={1}
+                  stepNumber={2}
+                />,
+              ],
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "function",
+              "props": Object {
+                "currentStep": 0,
+                "index": 0,
+                "stepNumber": 1,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "function",
+              "props": Object {
+                "currentStep": 0,
+                "index": 1,
+                "stepNumber": 2,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bxivhb",
+              "isStatic": true,
+              "rules": Array [
+                "
+  display: flex;
+  align-self: center;
+  max-width: 100%;
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bxivhb",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <ForwardRef
+                next={true}
+                onClick={[Function]}
+              >
+                Next Step ⇒
+              </ForwardRef>,
+              <ForwardRef
+                onClick={[Function]}
+                reset={true}
+              >
+                Reset ↻
+              </ForwardRef>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Next Step ⇒",
+                "next": true,
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Next Step ⇒",
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "rules": Array [
+                    "
+  width: 100px;
+  font-size: 12px;
+  align-content: center;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 20px;
+  ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.button",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "button",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Reset ↻",
+                "onClick": [Function],
+                "reset": true,
+              },
+              "ref": null,
+              "rendered": "Reset ↻",
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "rules": Array [
+                    "
+  width: 100px;
+  font-size: 12px;
+  align-content: center;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 20px;
+  ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.button",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "button",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-dnqmqq",
+              "isStatic": true,
+              "rules": Array [
+                "
+  display: flex;
+  margin: 60px auto 0 auto;
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-dnqmqq",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": true,
+          "rules": Array [
+            "
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  justify-content: space-between;
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

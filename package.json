@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "jest": "^23.6.0",
@@ -16,7 +21,7 @@
     "start": "react-scripts start",
     "heroku-postbuild": "npm run build",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest --config ./jest.config.json && codecov",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -27,5 +32,17 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "babel-jest": "^23.6.0",
+    "codecov": "^3.1.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "!node_modules/react-runtime"
+    ]
+  }
 }
