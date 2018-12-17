@@ -2,6 +2,8 @@
 
 This application was built using Create React App and demonstrates the use of a progress bar.
 
+[![codecov](https://codecov.io/gh/ObieWalker/progress-bar/branch/develop/graph/badge.svg)](https://codecov.io/gh/ObieWalker/progress-bar)
+
 https://progress-check.herokuapp.com/
 
 ## Getting Started

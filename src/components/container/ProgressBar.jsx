@@ -19,19 +19,19 @@ class ProgressBar extends Component {
       currentStep: 0,
       noOfSteps: 2,
       progessComplete: false,
-      stepComplete: false
     };
   }
 
   nextStep = () => {
-    const { progessComplete, noOfSteps, currentStep } = this.state
+    const { progessComplete, noOfSteps } = this.state
     if (progessComplete === true){
       this.progressDone()
     } else {
       this.setState(prevState => {
         return { currentStep: prevState.currentStep + 1 }
       }, () => {
-        if (this.state.currentStep === noOfSteps) {
+        const { currentStep } = this.state
+        if (currentStep === noOfSteps) {
           this.setState({
             progessComplete: true
           })
@@ -52,8 +52,7 @@ class ProgressBar extends Component {
     this.setState({
       currentStep: 0,
       noOfSteps: this.state.noOfSteps,
-      progessComplete: false,
-      stepComplete: false
+      progessComplete: false
     })
   }
 

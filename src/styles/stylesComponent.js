@@ -8,7 +8,6 @@ export const AppWrapper = styled.div`
   width: 60%;
   margin: 0 auto;
 `
-
 export const FullBar = styled.div`
   display: flex;
   flex-direction: column;
