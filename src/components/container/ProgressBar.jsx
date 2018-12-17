@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
-import swal from 'sweetalert'
-import '../../styles/App.css'
-import CompletedStep from '../presentational/CompletedStep'
-import ProgressStep from '../presentational/ProgressStep'
-import StartComponent from '../presentational/StartComponent'
+import swal from 'sweetalert';
+
+import CompletedStep from '../presentational/CompletedStep';
+import StartComponent from '../presentational/StartComponent';
+import { 
+  Button, 
+  ButtonWrapper, 
+  Select, 
+  Steps, 
+  FullBar,
+  AlignBar
+ } from '../../styles/stylesComponent';
 
 class ProgressBar extends Component {
   constructor(props) {
@@ -17,26 +24,28 @@ class ProgressBar extends Component {
   }
 
   nextStep = () => {
-    if (this.state.progessComplete === true){
-      swal("Steps Completed.", {
-        buttons: false,
-        timer: 3000,
-      });
+    const { progessComplete, noOfSteps, currentStep } = this.state
+    if (progessComplete === true){
+      this.progressDone()
     } else {
       this.setState(prevState => {
         return { currentStep: prevState.currentStep + 1 }
       }, () => {
-        if (this.state.currentStep === this.state.noOfSteps) {
+        if (this.state.currentStep === noOfSteps) {
           this.setState({
             progessComplete: true
           })
-          swal("Steps Completed.", {
-            buttons: false,
-            timer: 3000,
-          });
+          this.progressDone()
         }
       })
     }
+  }
+
+  progressDone = () => {
+    swal("Steps Complete. Click Reset!", {
+      buttons: false,
+      timer: 3000,
+    });
   }
 
   reset = () => {
@@ -70,19 +79,20 @@ class ProgressBar extends Component {
   }
   
   render() {
-    const steps = [...Array(this.state.noOfSteps).keys()]
+    const { noOfSteps, currentStep} = this.state
+    const steps = [...Array(noOfSteps).keys()]
     return (
-      <div className="full-bar">
-        <div>
-          <span>Select Number of Steps:</span>
-          <select onChange={this.handleSelectSteps}>
-          <option value='2'>2</option>
-          <option value='3'>3</option>
-          <option value='4'>4</option>
-          <option value='5'>5</option>
-          </select>
-        </div>
-        <div style={{ display: 'flex', alignSelf: "center", maxWidth: "100%"}}>
+      <FullBar>
+        <Steps>
+          <span>Select the number of steps:</span>
+          <Select onChange={this.handleSelectSteps}>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+          </Select>
+        </Steps>
+        <AlignBar>
           <StartComponent />
           {
             steps.map((i) => (
@@ -90,15 +100,15 @@ class ProgressBar extends Component {
                 key={i}
                 index={i}
                 stepNumber={i+1}
-                currentStep={this.state.currentStep}
+                currentStep={currentStep}
               />
           ))}
-        </div>
-        <div className="button-container">
-          <button className="step-btn" onClick={this.nextStep}>Next Step</button>
-          <button className="reset-btn" onClick={this.reset}>Reset Step</button>
-        </div>
-      </div>
+        </AlignBar>
+        <ButtonWrapper>
+          <Button next onClick={this.nextStep}>Next Step &#8658;</Button>
+          <Button reset onClick={this.reset}>Reset &#8635;</Button>
+        </ButtonWrapper>
+      </FullBar>
     );
   }
 }
