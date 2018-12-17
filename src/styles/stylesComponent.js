@@ -44,7 +44,7 @@ export const DoneStep = styled.div`
 `
 
 export const Progress = styled.div`
-  margin: 14px -5px 0 -5px;
+  margin: 14px -7px 0 -7px;
   position: relative;
   height: 6px;
   width: 200px;
@@ -69,11 +69,18 @@ export const CompleteStep = styled.div`
   border-radius: 0.35em;
   z-index: 1
   ${props =>
-    props.completed &&
+    props.completed ?
     css`
+      transform: scale(1);
       background-color: ${props => props.theme.color};
-  ` 
+    ` :
+    css`
+      transform: scale(0.79);
+    `
   };
+  transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
 `
 
 export const Button = styled.button`
