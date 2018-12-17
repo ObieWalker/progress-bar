@@ -1,17 +1,22 @@
 import React from "react";
 
-import '../../styles/App.css'
+import {
+  Text,
+  Progress,
+  CompleteStep,
+  theme
+} from '../../styles/stylesComponent';
 
 const CompletedStep = (props) => {
-
-  const completed = props.currentStep >= props.stepNumber ? 'filled-step': ''
+  const { currentStep, stepNumber } = props
+  const completed = currentStep >= stepNumber ? 'filled': ''
 
   return (
     <>
-    <div className={`progress-bar ${completed}`}></div>
-    <div className={`completed-step ${completed}`}>
-    <p style={{ fontSize: '15px', marginTop: '40px', textAlign: 'center'}}>{props.stepNumber ? `Step ${props.stepNumber}`: 'Start'}</p>
-    </div>
+      <Progress completed={completed} theme={theme}></Progress>
+      <CompleteStep completed={completed} theme={theme}>
+      <Text>Step {props.stepNumber}</Text>
+      </CompleteStep>
     </>
   )
 }
